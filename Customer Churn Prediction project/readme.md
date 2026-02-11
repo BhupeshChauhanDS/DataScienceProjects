@@ -1,7 +1,3 @@
-To make your Churn Prediction README truly stand out (and not just look like every other project), you need to include Business Logic and Deployment Readiness.
-
-Here is a highly specific, "Senior Data Scientist" version of the README.
-
 📉 Customer Churn Prediction: Strategic Retention Model
 A Machine Learning approach to identifying high-risk customers and maximizing Customer Lifetime Value (CLV).
 
@@ -16,3 +12,21 @@ One-Hot Encoding: Converted categorical variables (Smoker, Region, Sex) into bin
 Standard Scaling: Scaled numerical features (Age, BMI) to a mean of 0 and variance of 1 to ensure the model isn't biased by large units.
 
 Target Analysis: Checked for class imbalance (important for Churn) to ensure the model doesn't just "guess" the majority class.
+
+🏆 Model (Classification)
+I compared multiple algorithms to find the best balance between speed and sensitivity:
+
+Logistic Regression: The interpretable baseline.
+
+Random Forest: To capture complex non-linear interactions.
+
+XGBoost: The champion for high-precision ranking.
+
+Evaluation Metrics (Beyond Accuracy)
+In churn, Accuracy is a trap. If 90% of people stay, a model that says "everyone stays" is 90% accurate but 0% useful. Instead, I focused on:
+
+Recall: "How many of the actual churners did we find?" (Crucial for not missing at-risk people).
+
+Precision: "When we flag a customer, how often are we right?" (Ensures we don't give discounts to happy customers).
+
+ROC-AUC: A measure of how well the model separates "Stayer" from "Leaver."

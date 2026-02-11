@@ -1,3 +1,4 @@
 *.csv
 *.pynb_checkpoints
 *.archive.zip
+*.ipynb_checkpoints

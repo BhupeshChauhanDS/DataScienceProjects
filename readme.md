@@ -4,7 +4,7 @@
 - key Models :Logistic Regression ,Random forest, XGBoost .
 - Result : Focused On maximizing F1 score and roc-AUC to handle classes
 
-## Second Project - Mediacl Insurance Cost prediction(Regrssion)
+## Second Project - Medical Insurance Cost prediction(Regression)
 
 - Goal: Predict individual medical costs using patient demographic and health data.
 - Key Models: Linear Regression, XGBoost, and Random Forest.
